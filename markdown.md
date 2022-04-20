@@ -27,11 +27,11 @@ GetMyWeather is a simple API, with one method (getWeather) and four input parame
 
 ## <a name="get"></a> What is the getWeather method?
 
-The getWeather method returns an HTML snippet, that the web developer can process with Javascript and/or style with CSS.
+The getWeather method returns an HTML snippet, that you can process with Javascript and/or style with CSS.
 
-A web developer will call the getWeather method for each forecast. This may happen multiple times in a session, as the user (of the web application) may request forecasts with different parameters.
+The getWeather method is called for each forecast. This may happen multiple times in a session, as the web application user may request forecasts with different parameters.
 
-The return package is static. To change the parameters of the forecast, you must invoke getWeather again with the new parameter values.
+The return package of the getWeather method is static. To change the parameters of the forecast, you must invoke getWeather again with the new parameter values.
 
 ### <a name="param"></a> Using getWeather parameters
 * **Location** Location expressed as lattitude/longitude, in ISO 6709 format.
