@@ -29,7 +29,7 @@ GetMyWeather is a simple API, with one method (getWeather) and four input parame
 
 The getWeather method is called for each forecast. Given four valid inputs (location, specificity, time, key), the method returns four values (temperature, windspeed, chanceRain, trust) for a micro-forecast. This may happen multiple times in a session, as the web application user may request forecasts with different parameters.
 
-The getWeather method returns a static HTML package, that you can process with Javascript and/or style with CSS. To change the parameters of the forecast, you must invoke getWeather again with the new parameter values. 
+The getWeather method returns a static HTML package that you can process with Javascript and/or style with CSS. To change the parameters of the forecast, you must invoke getWeather again with the new parameter values. 
 
 ### <a name="param"></a> Using getWeather parameters
 * **Location** Location expressed as lattitude/longitude, in ISO 6709 format.
@@ -50,11 +50,13 @@ Once the getWeather method is successfully called with valid inputs, the getWeat
 
 ## <a name="use"></a> How do I use getWeather?
 
-Include this empty element in your HTML page. Your browser will insert the getWeather return package here.
+Include this empty element in your HTML page. Your browser will insert the getWeather return package here. 
 
 ```javascript
 <div id="forecast"></div>
 ```
+
+The following sections will provide code snippets to initialize and call the getWeather method in order to receive its output.
 
 ### <a name="init"></a> Initializing getWeather
 
@@ -71,8 +73,7 @@ new getWeather(document.getElementById('forecast')}
 
 ### <a name="call"></a> Calling getWeather
 
-For each forecast, call the getWeather method with valid parameters. 
-
+For each forecast, call the getWeather method with valid parameters with the following code snippet. 
 
 ```javascript
 <script async defer
@@ -92,17 +93,17 @@ Upon success, the getWeather method returns the following HTML structure (values
 
 ```javascript
 <div class="forecast">
-<div class="temperature">78</div>
-<div class="windspeed">15</div>
-<div class="chanceRain">30</div>
-<div class="trust">80</div>
+    <div class="temperature">78</div>
+    <div class="windspeed">15</div>
+    <div class="chanceRain">30</div>
+    <div class="trust">80</div>
 </div>
 ```
 
 Note: Time between invoking the getWeather method and the return package is negligible. Most web applications will not require a GUI indication that the application is waiting for a result.
 
 ## <a name="error"></a> Errors
-getWeather may return the following error strings if it cannot provide a forecast:
+The getWeather method may return the following error strings if it cannot provide a forecast:
 * **"Invalid key"** 
 * **"Invalid parameter format"**
 * **"Parameter out of range"**
