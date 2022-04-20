@@ -25,8 +25,6 @@ GetMyWeather is a simple API, with one method (getWeather) and four input parame
 * **Browser** GetMyWeather is supported by all modern browsers that support Javascript. 
 * **Javascript** Javascript must be enabled to use GetMyWeather.
 
-Register for an API key at https://www.getmyweather.com. Cost depends on usage; with details available on the website. A no-cost key is available for application development and testing.
-
 ## <a name="get"></a> What is the getWeather method?
 
 The getWeather method returns an HTML snippet, that the web developer can process with Javascript and/or style with CSS.
