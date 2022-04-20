@@ -18,7 +18,7 @@ This repository contains the source code for the GetMyWeather API. For more info
 
 
 ## <a name="api"></a> What is GetMyWeather?
-GetMyWeather is a simple API, with one method (getWeather) and four input parameters (Location, Specificity, Time, Key). Developers can use the GetMyWeather API to embed "micro-forecasts" (weather forecasts for a very specific location) into an HTML page. 
+GetMyWeather is a simple API, with one method (getWeather) and four input parameters (Location, Specificity, Time, Key). Developers can use the GetMyWeather API to embed "micro-forecasts" (weather forecasts for a very specific location) into an HTML page. Many developers are drawn to using this API due to its simplicity.
 
 ### <a name="req"></a> Requirements for use
 * **API key** Register for an API key at https://www.getmyweather.com. Cost depends on usage; with details available on the website. A no-cost key is available for application development and testing.
